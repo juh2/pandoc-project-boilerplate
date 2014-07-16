@@ -15,7 +15,14 @@
 # this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
 # St, Fifth Floor, Boston, MA 02110, USA
 
-TARGET = [bookname] # insert the filename of your publication
+# Uncomment the first if you're on Linux, the second if you're on Mac OS X
+# I'm sure there is a better way to solve this.
+
+# MD5 = md5sum
+# MD5 = md5
+
+# Change "bookname" to the filename of your book
+TARGET = bookname
 SRC = $(shell cat outline.txt)
 ID = $(shell git rev-parse HEAD)
 TARGETDIR = build
