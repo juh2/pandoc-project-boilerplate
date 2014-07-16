@@ -18,11 +18,11 @@ The Makefile contains all commands we need to produce pdf files for proof readin
 outline.txt
 -----------
 
-If you split your book into several files, eg. because you want to organize your work chapterwise, you can list the files in here in order of appearance in the book. 
+If you split your book into several files, eg. because you want to organize your work chapterwise, you can list the files in here in order of appearance in the book.
 
 There are other ways to concat files to a book. You can name your files in an alphanumerical way, eg. 00-intro.md, 01-preface.md etc. Then you can change the definition of the SRC variable accordingly.
 
-  SRC = *.md
+    SRC = *.md
 
 draft.tex
 ---------
