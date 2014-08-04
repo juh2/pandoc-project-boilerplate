@@ -29,7 +29,7 @@ EPUBOPTIONS =
 all: pdf epub fingerprint
 	@echo "Done!"
 
-draft:
+draft: $(TARGETDIR)
 	pandoc $(SRC) $(DRAFTOPTIONS) -o $(TARGETDIR)/$(TARGET)-$(ID).pdf
 
 pdf: $(TARGETDIR)

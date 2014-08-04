@@ -13,12 +13,12 @@ Requirements
 Makefile
 --------
 
-The Makefile contains all commands we need to produce pdf files for proof reading and printing and a epub file for distribution.
+The Makefile contains all commands we need to produce pdf files for proof reading and printing as well as an epub file for distribution.
 
 outline.txt
 -----------
 
-If you split your book into several files, eg. because you want to organize your work chapterwise, you can list the files in here in order of appearance in the book.
+If you split your book into several files, eg. because you want to organize your work chapterwise, you can list the files in outline.txt in order of appearance in the book.
 
 There are other ways to concat files to a book. You can name your files in an alphanumerical way, eg. 00-intro.md, 01-preface.md etc. Then you can change the definition of the SRC variable accordingly.
 
@@ -32,4 +32,4 @@ This file contains the latex preamble to produce a proof reading printout of you
 final.tex
 ---------
 
-This file contains the preamble to produce the final production pdf to be printed eg. by a print-on-demand service.
+This file contains the preamble to produce the final production pdf to be printed eg. by a print-on-demand service. Adjust it to your needs.
