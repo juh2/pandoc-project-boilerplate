@@ -19,6 +19,10 @@
 TARGET = bookname
 SRC = $(shell cat outline.txt)
 ID = $(shell git rev-parse HEAD)
+# If you want a short ID use the --short option
+# ID = $(shell git rev-parse --short HEAD)
+# If you use Mercurial use
+# ID = $(shell hg id -i)
 TARGETDIR = build
 DRAFTOPTIONS = --variable lang=german --variable fontsize=12pt -H draft.tex
 PDFOPTIONS = --latex-engine=xelatex --variable fontsize=10pt \
@@ -44,3 +48,10 @@ $(TARGETDIR):
 fingerprint: $(TARGETDIR)
 	shasum $(TARGETDIR)/$(TARGET)-$(ID).pdf > $(TARGETDIR)/$(TARGET)-$(ID).sha
 	shasum $(TARGETDIR)/$(TARGET)-$(ID).epub >> $(TARGETDIR)/$(TARGET)-$(ID).sha
+
+.PHONY: clean
+
+clean:
+	rm $(TARGETDIR)/*.epub $(TARGETDIR)/*.pdf
+
+rebuild: clean all
