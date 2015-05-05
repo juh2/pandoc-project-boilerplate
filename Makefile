@@ -26,7 +26,7 @@ ID = $(shell git rev-parse HEAD)
 TARGETDIR = build
 DRAFTOPTIONS = --variable lang=german --variable fontsize=12pt -H draft.tex
 PDFOPTIONS = --latex-engine=xelatex --variable fontsize=10pt \
-             --variable documentclass=scrbook --variable lang=ngerman \
+             --variable documentclass=scrbook --variable lang=german \
              -H final.tex
 EPUBOPTIONS =
 
@@ -52,6 +52,6 @@ fingerprint: $(TARGETDIR)
 .PHONY: clean
 
 clean:
-	rm $(TARGETDIR)/*.epub $(TARGETDIR)/*.pdf
+	rm $(TARGETDIR)/*.epub $(TARGETDIR)/*.pdf $(TARGETDIR)/*.sha
 
 rebuild: clean all
