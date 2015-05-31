@@ -1,7 +1,11 @@
 Pandoc Project Boilerplate
 ==========================
 
-This is the boilerplate to produce a book and an ebook with Pandoc.
+This is the boilerplate to produce a book and an ebook with [Pandoc](http://pandoc.org/).
+
+It is derived from my German book ["Das Zen von Pandoc"](http://literatur.hasecke.com/sachbuecher/das-zen-von-pandoc) which you can buy as [book](http://www.amazon.de/Das-ZEN-von-Pandoc-professionell/dp/1505218799/ from Amazon
+) and as ebook on [Amazon](https://www.amazon.de/dp/B00TQ55D34
+), [Google Play](https://play.google.com/store/books/details?id=-V2-BgAAQBAJ) and the [iBooks Store](https://itunes.apple.com/us/book/das-zen-von-pandoc/id982527831).  
 
 Requirements
 ------------
